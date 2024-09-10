@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perspective properties</title>
+    <style>
+.out{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    perspective: 700px;
+    margin: 10px;
+   
+    
+
+}
+.in{
+    width: 200px;
+    height: 200px;
+    background-color:red;
+    transform: rotatey(0deg);
+    background-image: url(about-us.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    
+    
+    
+
+}
+.in:hover{
+    transition: 2s;
+    transform:rotatey(360deg);
+    perspective:100px;
+
+}
+.without{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    perspective: 800px;
+
+    margin: 10px;
+   
+    
+
+}
+.within{
+    width: 200px;
+    height: 200px;
+    background-color:green;
+    transform: rotatex(0deg);
+    background-image: url(about-us.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+    
+
+}
+.within:hover{
+    transition: 2s;
+    transform:rotatex(360deg);
+    perspective:800px; 
+
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color:blue;
+    transform: rotatex(0deg);
+    background-image: url(about-us.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 10px;
+    
+}
+.box:hover{
+    transition: 1s;
+    transform: rotate(360deg);
+}
+
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="in"></div>
+    </div>
+    <div class="without">
+        <div class="within"></div>
+    </div>
+
+    <div class="box"></div>
+</body>
+</html>

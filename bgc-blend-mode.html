@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-blend-mode & mix-blend-mode</title>
+    <style>
+        /* backgroung-blend-mode */
+        #box{
+            width: 440px;
+            height: 440px;
+            border: 2px black solid;
+            background-image:radial-gradient(red,green,blue,aqua,gray),url(about-us.jpg);
+            background-blend-mode:overlay;
+        }
+        /* Mix-blind-mode */
+        .box{
+        width: 440px;
+            height: 440px;
+            border: 2px black solid;
+            background: url(about-us.jpg);
+            background-blend-mode:overlay;}
+            h3{
+                text-align: center;
+                margin-top: 150px;
+                background-color:green;
+                mix-blend-mode:multiply;
+
+            }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>Background-blend-mode</p>
+    </div>
+    <div class="box">
+        <h3>Mix-blend-mode</h3>
+    </div>
+</body>
+</html>

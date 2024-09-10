@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text wrap border-inline border-block  margin-inline  margin-block  </title>
+    <style>
+        header{
+            width: 300px;
+            height: auto;
+            background-color: aquamarine;
+            text-wrap: balance;
+            margin-inline: 80px;
+            margin-block-start: 80px;
+            border-inline: 2px black solid;
+            border-block: 8px red solid;
+        }
+       .balance{
+        color: green;text-wrap: balance;
+       }
+       .unbalance{
+        color: rgb(119, 37, 118);text-wrap:wrap;
+       }
+    </style>
+</head>
+
+<body>
+   <header>
+        <h1 id="balance"> balanc:Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </h1>
+        <h1 id="unbalance">unbalanc:Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </h1>
+   </header>
+</body>
+
+</html>

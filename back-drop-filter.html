@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backdrop-filter</title>
+    <style>
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./WhatsApp\ Image\ 2024-03-23\ at\ 00.38.39_00475721.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inner{
+    width: 500px;
+    height: 300px;
+    border: 3px white solid;
+    color: white;
+    text-align: center;
+    /* background-color: rgba(250, 250,250,0.5); */
+    /* backdrop-filter: brightness(300%); */
+    backdrop-filter: hue-rotate(200deg);
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="inner"><h2>Hello wahab</h2></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar toggle menu</title>
+    <style>
+        *{box-sizing: border-box;
+        }
+        html,body{
+            overflow-x: hidden;
+            height: 100%;
+        }
+        body{
+            background-color: aliceblue;
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+            width: 100%;
+            height: 60px;
+            background-color: chocolate;
+            position: fixed;
+            z-index: 10;
+        }
+        .sidebarIconToggle{
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            z-index: 20;
+            top: 22px;
+            left: 15px;
+            cursor: pointer;
+
+        }
+        #openside:checked ~ #smenu{
+         transform: translateX(0px);
+         background-color: rgb(126, 126, 239);
+         transition-property:background-color;
+         transition-timing-function: 3s;
+        }
+        .main{
+            height: 100%;
+            margin: 60px;
+            padding: 10px 50px;
+
+        }
+        #smenu{
+         height: 100%;
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 260px;
+         margin-top: 60px;
+         transform: translateX(-250px);
+         transition-property: color;
+         transition-duration: 1s;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            color: aliceblue;
+        }
+        li a{
+            color: aliceblue;
+            display: block;
+            padding: 10px 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        li a:hover{
+            background-color: rgb(3, 3, 71);
+            transition: all 1s;
+        }
+        .spiner{
+            height:3px;
+            background: white;
+            transition: all 0.3s;
+        }
+        .spiner#middle,.spiner#bottom{
+            margin-top: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="header"></div> 
+   <input type="checkbox" id="openside">
+   <label for="openside" class="sidebarIconToggle">
+    <div class="spiner" id="top"></div>
+    <div class="spiner" id="middle"></div>
+    <div class="spiner" id="bottom"></div>
+   </label>
+<div id="smenu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contect</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Products</a></li>
+    </ul>
+</div>
+<div class="main">
+    <h1>pure css sidebar toggle menu</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam praesentium exercitationem impedit nihil quibusdam quia mollitia odio velit sed nam at voluptatem aliquam, error dolores assumenda aperiam atque facilis. Qui maxime ipsum eos suscipit voluptatum nam, perspiciatis voluptatem expedita culpa doloremque, aspernatur, facere omnis excepturi eveniet. Possimus cumque amet facere a nihil totam necessitatibus pariatur? Nostrum voluptatem, sit fuga reprehenderit alias amet. Quia, consequatur. Nisi enim repellendus, sit neque facere praesentium aspernatur nostrum delectus eveniet mollitia officiis iusto iste possimus laudantium, quam facilis quae voluptates fuga adipisci distinctio quibusdam architecto aperiam! Fuga rerum nihil cum libero perspiciatis saepe a reiciendis, ullam, deserunt quam, dolore dignissimos nobis nisi ipsa? Quam tempora doloremque similique velit impedit quo architecto quisquam, corporis, illo provident tempore earum. Quibusdam, ipsam aut alias voluptatibus necessitatibus ipsum recusandae inventore vero laboriosam quod libero numquam est non aliquam quasi, voluptate nisi provident nobis expedita dolor debitis minima reprehenderit dicta eos? Molestias expedita necessitatibus enim eligendi illum doloribus iure vitae sed temporibus aut, commodi ducimus voluptas earum quaerat? Minus debitis neque tempore aperiam dolor beatae, asperiores vero ipsa ullam mollitia ipsum ad sequi doloremque quae rem reiciendis voluptas omnis qui quasi dolorum itaque possimus veritatis distinctio quam! Laudantium, commodi molestiae?</p>
+</div>
+</body>
+</html>

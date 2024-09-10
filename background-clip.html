@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-clip & background-gradient</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        h1{
+            background-image: url(about-us.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+           -webkit-background-clip:text;
+            font-size: 300px;
+            color:transparent;
+
+        }
+        .box{
+            background-image:url(about-us.jpg); 
+            background-size:cover;
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 300px;
+            border: 10px black dotted;
+            background-clip:content-box;
+
+        }
+        .card{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello wahab</h1>
+    <h2>How are You</h2>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo cumque, iusto exercitationem quos doloremque explicabo debitis corrupti labore molestiae rem dolor facere minus distinctio repellat? Expedita labore voluptatum magni est ex quos qui aliquam sit, ratione ipsum numquam? Amet assumenda molestias porro laudantium voluptatum deserunt suscipit enim quos quasi reiciendis.
+    </div>
+    <div class="card">
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, id!</p>
+    </div>
+</body>
+</html> 
